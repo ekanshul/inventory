@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SuperMarket</title>
+    <script src="products.js"></script>
+</head>
+
+
+    <br><br><br>
+    <h1 align="center">PRODUCT DETAILS</h1>
+    <form method="POST" action="products.php" onsubmit="return validation();">
+        <div align="center">
+            <fieldset style="height: 325px; width: 350px; border-radius: 10px; border-width: thick; border-color: rgb(138, 49, 49);" align="center"><br>
+                <label>Product ID:</label><br>
+                <input id="id" type="number" name="id"><br><br>
+                <label>Product Name:</label><br>
+                <input id="name" type="text" name="name"><br><br>
+                <label>Reorder Level:</label><br>
+                <input id="level" type="number" name="level"><br><br>
+                <label>Quantity Available:</label><br>
+                <input id="quantity" type="number" name="quantity"><br><br>
+                <label>Cost:</label><br>
+                <input id="cost" type="number" name="cost"><br><br><br>
+                <input type="submit" name="insert" value="Add New Product">
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>
